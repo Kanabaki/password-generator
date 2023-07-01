@@ -55,16 +55,16 @@ if (promptResults) {
 
   passwordText.value = endPassword;
 }else {
-    passwordTest.value = "";
+    passwordText.value = "";
   }
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 //Base--------------------------------------------------------------------------------------------------------------
 
-
+//If you add this parenthesis->(Math.floor(Math.random() * choiceArray.length)) , then it seems to only generate 1 character, 
+//which we fixed by removing the parenthesis and we were able to generate a longer string
 function generatePassword(){
-  console.log('おい、そのボタンを押さないで')
   var password = "";
   for(var i = 0; i < passlength; i++) {
     var randomIndx = Math.floor(Math.random() * choiceArray.length);
