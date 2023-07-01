@@ -9,13 +9,25 @@ Provide a short description explaining the what, why, and how of your project. U
 N/A
 
 ## Usage Images
+**Img 1**
+
 ![Password Generator Welcome Page](./Develop/Assets/Pass_generator_main.png)
+
+**Img 2**
+
 ![Password Generator Prompt Request](./Develop/Assets/Pass_generator_prompt.png)
+
+**Img 3**
+
 ![Password Generator Generated Password](./Develop/Assets/Pass-generator_generated.png)
 ## Usage
 Visit Page: -link to the live page-
 
-When you first open the page, you can see an empty box where a password will be generated and shown once you press the "Generate Password" button below the box. After the button is pressed you will be prompted with requests for your desired password parameters. You will be prompted with a request for password length between 8 and 138 characters, followed by a lowercase, uppercase, special characters, and number prompts that the user can select from. After all prompts are answered, a new password will be generated in the previously empty box. 
+When you first open the page, you can see an empty box where a password will be generated and shown once you press the "Generate Password" button below the box **(Img 1)** .
+
+ After the button is pressed you will be prompted with requests for your desired password parameters. You will be prompted with a request for password length between 8 and 138 characters, followed by a lowercase, uppercase, special characters, and number prompts that the user can select from **(Img 2)**. 
+ 
+ After all prompts are answered, a new password will be generated in the previously empty box **(Img 3)**. 
 
 ## Credits
 Original starter code repository: __friendly-parakeet__ from https://github.com/coding-boot-camp

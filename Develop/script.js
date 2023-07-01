@@ -1,20 +1,16 @@
-// Assignment code here
+// Assignment Code
+// the passLength var on line 3 is a test that gets overwritten once the passlength prompt triggers
+// the other variables are arrays containing the characters that the prompts will concat and save to the getPrompts function 
+
 var passLength = 8;
 var choiceArray = [''];
-
+// 
 var special = [' ' , '!' , '"' , '#' , '$' , '%' , '&' , "'" , '(' , ')' , '*' , '+' , ',' , '-' , '.' , '/' , ':' , ';' , '<' , '=' , '>' , '?' , '@' , '^' , '_' , "`" , "{" , '|' , "}" , '~', "[", "]", ];
 var lower= ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var upper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 var number = ['0','1','2','3','4','5','6','7','8','9',];
 
-// 1. Prompt user for pass criteria
-//    a. pass length 8 < 128
-//    b. lowercase,uppercase,numbers,special characters
-// 2.Validate the input
-// 3.Generate password based on the criteria
-// 4.Display generated password on the page
-
-
+//These prompts and confirms set the password parameters and concatenates possible combinations to the choiceArray
 function getPrompts() {
   choiceArray = [];
 passlength = parseInt(prompt("Choose Password Length (8-128 characters)"));
@@ -62,8 +58,9 @@ if (promptResults) {
 generateBtn.addEventListener("click", writePassword);
 //Base--------------------------------------------------------------------------------------------------------------
 
-//If you add this parenthesis->(Math.floor(Math.random() * choiceArray.length)) , then it seems to only generate 1 character, 
-//which we fixed by removing the parenthesis and we were able to generate a longer string
+//If you add this first parenthesis->(Math.floor(Math.random() * choiceArray.length)) , then it seems to only generate 1 character as a password,
+//which we fixed by removing the parenthesis and we were able to generate a longer string based on the first prompt
+//The function below randomizes indexes to return in a string
 function generatePassword(){
   var password = "";
   for(var i = 0; i < passlength; i++) {
@@ -73,17 +70,13 @@ function generatePassword(){
   }
   return password;
 } 
-//WHEN I click the button to generate a password
-//THEN I am presented with a series of prompts for password criteria
-//WHEN prompted for password criteria
-//THEN I select which criteria to include in the password
-//WHEN prompted for the length of the password
-//choose a length of at least 8 characters and no more than 128 characters
-//WHEN asked for character types to include in the password
-//THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-//WHEN I answer each prompt
-//THEN my input should be validated and at least one character type should be selected
-//WHEN all prompts are answered
-//THEN a password is generated that matches the selected criteria
-//WHEN the password is generated
-//THEN the password is either displayed in an alert or written to the page
+//------------------------------------------------------------------------------------------------------------------
+//Explanation of the Javascript
+
+//First, a few var's and arrays are defined. Then a querySelector variable is defined and attached to the #generate class in the html which is 
+//the button element. When the generate button  is "clicked", the addEventListener triggers the writePassword function. Then in the writePassword
+// Function, a promptResults var and a passwordText var are defined. The promptResults var sends prompts and confirms for parameters and then 
+//concatenates the desired parameters and returns it for later use. Then code moves down to the if else statements in the previous writePassword 
+//Function and then calls the generatePassword Function. This block sets the password var to a string after using a for loop to randomly select 
+//items in the choiceArray and concatenate them to the password, which is then returned back to the if statement. Following the code it is then 
+//finally diplayed as a string and displayed in the #password element and a new passcode has been generated.
