@@ -11,15 +11,15 @@ N/A
 ## Usage Images
 **Img 1**
 
-![Password Generator Welcome Page](./Develop/Assets/Pass_generator_main.png)
+![Password Generator Welcome Page](./Assets/Pass_generator_main.png)
 
 **Img 2**
 
-![Password Generator Prompt Request](./Develop/Assets/Pass_generator_prompt.png)
+![Password Generator Prompt Request](./Assets/Pass_generator_prompt.png)
 
 **Img 3**
 
-![Password Generator Generated Password](./Develop/Assets/Pass-generator_generated.png)
+![Password Generator Generated Password](./Assets/Pass-generator_generated.png)
 ## Usage
 Visit Page: -link to the live page-
 
