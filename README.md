@@ -21,7 +21,7 @@ N/A
 
 ![Password Generator Generated Password](./Assets/Pass-generator_generated.png)
 ## Usage
-Visit Page: -link to the live page-
+Visit Page: https://kanabaki.github.io/password-generator/
 
 When you first open the page, you can see an empty box where a password will be generated and shown once you press the "Generate Password" button below the box **(Img 1)** .
 
