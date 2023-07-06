@@ -1,4 +1,4 @@
-# Password Generator Starter Code
+# Password Generator 
 
 ## Description 
 This project is a page with the task of generating a password based on a user's preferred parameters. If you're having trouble deciding on a password, why not solve this issue by handing the task to a random generator? The project explores javascript, specifically arrays, and functions related to it. A "for loop" and an "if else" statement are also used. The prompt() and confirm() methods were also used to gather user input, and logical operators were used to validate input. The combination of the aforementioned code was learned to finalize this working web application. If you're interested in a more detailed explanation, check out the javascript file in the project directory.
